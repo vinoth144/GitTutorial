@@ -1,0 +1,20 @@
+package com.basicprogram;
+
+import java.util.Scanner;
+
+public class DayTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input =new Scanner(System.in);
+System.out.println("Enter the age");
+int word = input.nextInt();
+if (word>=1&&word <=18) {
+	System.out.println("you are eligble to vote ");
+}
+else {
+	System.out.println("you are  not eligble to vote");
+}
+	}
+
+}

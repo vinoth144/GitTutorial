@@ -1,0 +1,89 @@
+package com.academy;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.lang.String;
+public class NameList {
+	
+	public static void studentName() {
+		System.out.println("raja");
+	}
+	public void studentId() {
+		System.out.println("345");
+	}
+	public void studentAge() {
+		System.out.println("34");
+	}
+	
+	public static void main(String[]args) {
+		
+		NameList record = new NameList();
+		
+		//studentName();
+		
+		//record.studentId();
+		
+		//record.studentAge();
+		
+		//String a = new String();
+		
+		//String s = "babu can";
+		//System.out.println(s.split(" "));
+		
+		ArrayList <String>   r = new ArrayList <String>();
+		
+		r.add("babu");
+		r.add("max");
+		
+		System.out.println(r.get(0));
+		
+		
+		String [] a = {"babu", "black","jhon ", "don"};
+		
+		int f = a.length;
+		
+		System.out.println(f);
+		
+		
+	System.out.println(a[2]);
+	
+	String z = new String ();
+	String m = "red the black";
+	
+	String [] v = m.split("the");
+	
+	System.out.println(v);
+	
+	int [] arr = new int [5];
+	
+	arr[0]=1;
+	arr[1]=3;
+	arr[2]=5;
+	arr[3]=7;
+	arr[4]=9;
+	
+	System.out.println(Arrays.toString(arr));
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	}
+	
+	
+	}
+

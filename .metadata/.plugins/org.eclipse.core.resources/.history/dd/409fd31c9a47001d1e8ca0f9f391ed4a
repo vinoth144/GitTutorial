@@ -1,0 +1,49 @@
+package com.Exception;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			int a = 5;
+			int b =1;
+			int c = a/b;
+					System.out.println(c);
+					
+			String[] word = new String[3];
+			word[0] = "ram";
+			word[1] = "gopal";
+			word[2]= "regan";
+				System.out.println(word[1]);	
+			
+				List l = new LinkedList();
+				l.add("donald");
+				l.add(123);
+				System.out.println(l.get(2));
+				
+		}
+		
+		catch(ArithmeticException e) {
+			String message = e.getMessage();
+		System.out.println(message);
+		
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			String message = e.getMessage();
+			System.out.println(message);
+		}
+		
+		catch(IndexOutOfBoundsException e) {
+			String message = e.getMessage();
+			System.out.println("list Exception");
+		}
+		//catch(StringIndexOutOfBoundsException e) {
+			
+		//}
+	}
+
+}

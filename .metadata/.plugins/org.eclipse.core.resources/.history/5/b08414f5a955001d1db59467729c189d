@@ -1,0 +1,41 @@
+package seleniumWorkouts;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Revision {
+
+	public static void main(String[] args) throws AWTException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver_win32 (2)\\chromedriver.exe" );
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+
+		WebElement findElement = driver.findElement(By.id("email"));
+		
+		Robot arm = new Robot();
+		
+		arm.keyPress(KeyEvent.VK_D);
+		arm.keyRelease(KeyEvent.VK_D);
+		
+		WebElement findElement2 = driver.findElement(By.id("passContainer"));
+		Actions done = new Actions(driver);
+		done.doubleClick(findElement).build().perform();
+		//done.dragAndDrop(findElement,findElement2 ).build().perform();
+		JavascriptExecutor je = (JavascriptExecutor)driver;
+		
+		je.executeScript("arguments[0]. setAttribute('value','babu');","password");
+	}
+
+}

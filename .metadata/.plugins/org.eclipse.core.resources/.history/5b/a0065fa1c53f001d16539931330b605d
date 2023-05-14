@@ -1,0 +1,26 @@
+package com.basicprogram;
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "java";
+		
+		int size = s.length();
+		System.out.println(size);
+		
+		Boolean a = s.isEmpty();
+		System.out.println(a);
+		
+		 char charAt = s.charAt(2);
+		 System.out.println(charAt);
+		 
+		int word = s.indexOf('j');
+		System.out.println(word);
+		
+		int lastIndexOf = s.lastIndexOf('a');
+		System.out.println(lastIndexOf);
+	}
+
+}

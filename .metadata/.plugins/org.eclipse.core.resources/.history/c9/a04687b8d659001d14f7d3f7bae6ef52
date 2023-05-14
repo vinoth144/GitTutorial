@@ -1,0 +1,26 @@
+package workouts;
+
+public class DoubtClarfiy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int a =6;
+int cons=a;
+ a=a*6;
+ System.out.println(cons);
+	
+int c = 10;
+int b = 20;
+ Switch () {
+case 
+	b>c:
+		System.out.println("b is the large no");
+
+	
+
+default:
+	System.out.println("a is the large no");
+}
+
+}
+}

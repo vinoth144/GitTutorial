@@ -1,0 +1,11 @@
+package com.xinterface;
+
+public interface Example {
+
+ default void staff(String name) {
+	System.out.println(name);
+}
+ default void staff(int age) {
+	System.out.println(age);
+}
+}

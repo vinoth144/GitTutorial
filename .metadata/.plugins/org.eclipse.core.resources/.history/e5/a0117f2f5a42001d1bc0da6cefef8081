@@ -1,0 +1,43 @@
+package com.basicprogram;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CollectionSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Set s = new HashSet();
+		
+		s.add(34.67);
+		s.add("ramu");
+		s.add('f');
+		s.add("steve");
+		
+		System.out.println(s);
+		for(Object b:s) {
+			System.out.println(b);
+		}
+		
+		Set h = new HashSet();
+		h.addAll(s);
+		System.out.println(h);
+		
+		Boolean ra = s.contains('f');
+				System.out.println(ra);
+		
+				h.add("wall");
+		
+		Object containsAll = s.containsAll(h);
+		System.out.println(containsAll);
+		
+		Object removeAll = h.removeAll(s);
+		System.out.println(removeAll);
+		
+		System.out.println(h);
+		
+		
+	}
+
+}

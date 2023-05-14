@@ -1,0 +1,234 @@
+package seleniumWorkouts;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class RobotAssignment {
+
+	public static void main(String[] args) throws AWTException, InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver_win32 (2)\\chromedriver.exe" );
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demo.automationtesting.in/Register.html");
+		WebElement findElement = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
+		findElement.click();
+		Robot arm = new Robot();
+		Thread.sleep(2000);
+		arm.keyPress(KeyEvent.VK_SHIFT);
+	
+		arm.keyPress(KeyEvent.VK_D);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_D);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_I);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_I);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_N);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_N);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_E);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_E);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_S);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_S);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_H);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_H);
+		
+		
+		arm.keyPress(KeyEvent.VK_SPACE);
+		arm.keyRelease(KeyEvent.VK_SPACE);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_B);
+		
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_B);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_A);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_A);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_B);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_B);
+		
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_U);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_U);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		Thread.sleep(1000);
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_R);
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_R);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		
+		arm.keyPress(KeyEvent.VK_V);
+		arm.keyRelease(KeyEvent.VK_V);
+		arm.keyPress(KeyEvent.VK_R);
+		arm.keyRelease(KeyEvent.VK_R);
+		arm.keyPress(KeyEvent.VK_I);
+		arm.keyRelease(KeyEvent.VK_I);
+		arm.keyPress(KeyEvent.VK_D);
+		arm.keyRelease(KeyEvent.VK_D);
+		arm.keyPress(KeyEvent.VK_H);
+		arm.keyRelease(KeyEvent.VK_H);
+		arm.keyPress(KeyEvent.VK_A);
+		arm.keyRelease(KeyEvent.VK_A);
+		arm.keyPress(KeyEvent.VK_C);
+		arm.keyRelease(KeyEvent.VK_C);
+		arm.keyPress(KeyEvent.VK_H);
+		arm.keyRelease(KeyEvent.VK_H);
+		arm.keyPress(KeyEvent.VK_A);
+		arm.keyRelease(KeyEvent.VK_A);
+		arm.keyPress(KeyEvent.VK_L);
+		arm.keyRelease(KeyEvent.VK_L);
+		arm.keyPress(KeyEvent.VK_A);
+		arm.keyRelease(KeyEvent.VK_A);
+		arm.keyPress(KeyEvent.VK_M);
+		arm.keyRelease(KeyEvent.VK_M);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		arm.keyPress(KeyEvent.VK_B);
+		arm.keyRelease(KeyEvent.VK_B);
+		arm.keyPress(KeyEvent.VK_A);
+		arm.keyRelease(KeyEvent.VK_A);
+		arm.keyPress(KeyEvent.VK_B);
+		arm.keyRelease(KeyEvent.VK_B);
+		arm.keyPress(KeyEvent.VK_U);
+		arm.keyRelease(KeyEvent.VK_U);
+		arm.keyPress(KeyEvent.VK_SHIFT);
+		arm.keyPress(KeyEvent.VK_2);
+		
+		arm.keyRelease(KeyEvent.VK_SHIFT);
+		arm.keyRelease(KeyEvent.VK_2);
+		arm.keyPress(KeyEvent.VK_G);
+		arm.keyRelease(KeyEvent.VK_G);
+		arm.keyPress(KeyEvent.VK_M);
+		arm.keyRelease(KeyEvent.VK_M);
+		arm.keyPress(KeyEvent.VK_A);
+		arm.keyRelease(KeyEvent.VK_A);
+		arm.keyPress(KeyEvent.VK_I);
+		arm.keyRelease(KeyEvent.VK_I);
+		arm.keyPress(KeyEvent.VK_L);
+		arm.keyRelease(KeyEvent.VK_L);
+		arm.keyPress(KeyEvent.VK_PERIOD);
+		arm.keyRelease(KeyEvent.VK_PERIOD);
+		arm.keyPress(KeyEvent.VK_C);
+		arm.keyRelease(KeyEvent.VK_C);
+		arm.keyPress(KeyEvent.VK_O);
+		arm.keyRelease(KeyEvent.VK_O);
+		arm.keyPress(KeyEvent.VK_M);
+		arm.keyRelease(KeyEvent.VK_M);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		arm.keyPress(KeyEvent.VK_9);
+		arm.keyRelease(KeyEvent.VK_9);
+		
+		arm.keyPress(KeyEvent.VK_7);
+		arm.keyRelease(KeyEvent.VK_7);
+		
+		arm.keyPress(KeyEvent.VK_9);
+		arm.keyRelease(KeyEvent.VK_9);
+		arm.keyPress(KeyEvent.VK_0);
+		arm.keyRelease(KeyEvent.VK_0);
+		
+		arm.keyPress(KeyEvent.VK_4);
+		arm.keyRelease(KeyEvent.VK_4);
+		
+		arm.keyPress(KeyEvent.VK_0);
+		arm.keyRelease(KeyEvent.VK_0);
+		
+		arm.keyPress(KeyEvent.VK_8);
+		arm.keyRelease(KeyEvent.VK_8);
+		
+		arm.keyPress(KeyEvent.VK_1);
+		arm.keyRelease(KeyEvent.VK_1);
+		
+		arm.keyPress(KeyEvent.VK_3);
+		arm.keyRelease(KeyEvent.VK_3);
+		
+		arm.keyPress(KeyEvent.VK_5);
+		arm.keyRelease(KeyEvent.VK_5);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		arm.keyPress(KeyEvent.VK_SPACE);
+		arm.keyRelease(KeyEvent.VK_SPACE);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		arm.keyPress(KeyEvent.VK_SPACE);
+		arm.keyRelease(KeyEvent.VK_SPACE);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		arm.keyPress(KeyEvent.VK_SPACE);
+		arm.keyRelease(KeyEvent.VK_SPACE);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		arm.keyPress(KeyEvent.VK_SPACE);
+		arm.keyRelease(KeyEvent.VK_SPACE);
+		
+		arm.keyPress(KeyEvent.VK_TAB);
+		arm.keyRelease(KeyEvent.VK_TAB);
+		
+		//Actions act = new Actions(driver);
+		//act.doubleClick();
+		
+		WebElement findElement2 = driver.findElement(By.id("msdd"));
+		findElement2.click();
+		//Select drop = new Select(findElement2);
+		//drop.selectByVisibleText("English");
+		driver.findElement(By.xpath("(//li[@class='ng-scope'])[8]")).click();
+		
+	WebElement findElement3 = driver.findElement(By.id("Skills"));
+	Thread.sleep(1000);
+	//findElement3.click();
+	
+	Select drop = new Select(findElement3);
+	drop.selectByVisibleText("Java");
+		
+		
+	}
+
+}

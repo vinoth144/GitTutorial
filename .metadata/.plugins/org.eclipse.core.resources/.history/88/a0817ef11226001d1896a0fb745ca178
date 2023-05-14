@@ -1,0 +1,24 @@
+package intro;
+
+import java.time.Duration;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Out {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise");
+		driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")).click();
+		driver.findElement(By.xpath("//option[@value='AED']")).click();
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package seleniumWorkouts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FrameDemo {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\dinesh babu\\greens practice\\Practice\\Driver\\geckodriver.exe");
+WebDriver driver = new FirefoxDriver();
+driver.get("https://netbanking.hdfcbank.com/netbanking/");
+
+
+
+WebElement findElement = driver.findElement(By.name("fldLoginUserId"));
+
+		WebDriver frame = driver.switchTo().frame(findElement);
+		Thread.sleep(3000);
+	
+	}
+
+}

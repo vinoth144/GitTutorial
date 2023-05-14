@@ -1,0 +1,15 @@
+package com.basicprogram;
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "java";
+		
+		int size = s.length();
+		System.out.println(size);
+		
+	}
+
+}

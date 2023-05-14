@@ -1,0 +1,63 @@
+package seleniumWorkouts;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import graphql.execution.instrumentation.tracing.TracingInstrumentation.Options;
+
+
+
+public class Test {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\dinesh babu\\greens practice\\Practice\\Driver\\geckodriver.exe");
+
+		WebDriver driver = new FirefoxDriver();
+		
+
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+
+		driver.findElement(By.xpath("//a[text()='Create New Account']")).click();
+		Thread.sleep(2000);
+		
+		WebElement findElement = driver.findElement(By.id("month"));
+		
+		Select s = new Select(findElement);
+		
+		List<WebElement> options = s.getOptions();
+		
+		for(int i = 0; i<options.size();i++) {
+			if(i==6) {
+				break; 
+			}
+				  WebElement webElement = options.get(i);
+				  
+				  String text = webElement.getText();
+				  System.out.println(text);
+			
+			
+		}
+		
+		for(int i  =options.size() ; options.size()>=1 ;i--) {
+			
+			if(i==6) {
+				break; 
+			}
+				  WebElement webElement = options.get(i);
+				  
+				  String text = webElement.getText();
+				  System.out.println(text);
+		}	
+	}
+
+}

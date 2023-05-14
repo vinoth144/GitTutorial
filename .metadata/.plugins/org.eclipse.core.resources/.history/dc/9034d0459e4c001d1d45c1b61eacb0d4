@@ -1,0 +1,30 @@
+package workouts;
+
+public class BarkingDog {
+
+	 
+	 
+	public static void shouldWakeUp (boolean barking,int day) {
+		 day = 23;
+		if(day<8||day>22) {
+			barking= true;
+			
+		}
+		else{
+			barking = false;
+		
+		System.out.println(barking);
+	}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			
+		shouldWakeUp ( true, 23);
+		
+		System.out.println(1000);
+		
+	}
+
+}

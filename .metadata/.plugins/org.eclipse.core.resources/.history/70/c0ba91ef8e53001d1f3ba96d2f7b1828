@@ -1,0 +1,33 @@
+package workouts;
+
+public class SpeedConverter {
+	
+	
+	public static long toMilesPerHour(double kiloMetersPerHour) {
+		
+		if(kiloMetersPerHour<0) {
+			
+			
+		}
+		return -1;
+	}
+	
+	public static void printConversion (double kiloMetersPerHour ) {
+		
+		double milesPerHour = 1.609*kiloMetersPerHour;
+		
+		kiloMetersPerHour = kiloMetersPerHour/1.609;
+		
+		System.out.println(kiloMetersPerHour);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		toMilesPerHour(2);
+		
+	}
+
+}

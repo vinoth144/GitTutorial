@@ -1,0 +1,27 @@
+package intro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriver.SystemProperty;
+
+public class Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	
+		System.setProperty("webdriver.chrome.driver", "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get(accounts.google.com/v3/signin/identifier?dsh=S-1358763017%3A1660748393177482&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQN2RmUrzFUJORUdc8yrVku6tgKv6kbgvlQvWtmN6N4O3tQJu8q4FBKdr7LFs6PKyWX-vas5kB7q);
+		driver.findElement(By.id("identifierId")).sendKeys("dnshbabu25");
+		//driver.findElement(By.name("inputPassword")).sendKeys("xyz");
+		driver.findElement(By.className("VfPpkd")).click();
+	
+	
+	}
+	
+}

@@ -1,0 +1,63 @@
+package com.method;
+
+public class overriding extends OverLoading  {
+	
+	
+	public void particulars(String name,int age  ) {
+		 
+		System.out.println("avengers end game");
+	}
+	public void particulars (int age,String name){
+		System.out.println(age+" "+ name);
+	}
+	public void  particulars(byte id) {
+		
+	
+		System.out.println(id);
+	}
+public void particulars(long number) {
+	System.out.println("what is the value of 1/0");
+}
+
+public void particulars(long numbers,String name) {
+	System.out.println(numbers+" "+ name);
+}
+	public void particulars(float sqrt,double log,char a) {
+		System.out.println(sqrt+" "+ log+" "+a);
+	}
+	public void particulars(boolean is) {
+		System.out.println(is);
+	}
+	public void particulars(int a ,int b) {
+		System.out.println(a*b);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		overriding concept = new overriding();
+		
+		concept.particulars(false);
+		concept.particulars (15);
+		concept.particulars(20, 10);
+		concept.particulars(346821237642l);
+		concept.particulars(12, "HULK");
+		concept.particulars(16812467211234l, "GOD");
+		concept.particulars("FEDERER", 38);
+		concept.particulars(1.111f, 234.21467, 'r');
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

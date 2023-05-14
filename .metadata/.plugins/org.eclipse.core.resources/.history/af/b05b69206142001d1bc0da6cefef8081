@@ -1,0 +1,49 @@
+package com.basicprogram;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class CollectionSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Set <Object > s = new TreeSet<Object>();
+		
+		s.add(34.67f);
+		s.add("ramu");
+		s.add('f');
+		s.add("steve");
+		s.add(null);
+		s.add(null);
+		s.add('f');
+	
+		for(Object b:s) {
+			System.out.println(b);
+		}
+
+		Set h = new TreeSet();
+		h.addAll(s);
+		System.out.println(h);
+		
+		Boolean ra = s.contains('f');
+				System.out.println(ra);
+		
+				h.add("wall");
+		
+		Object containsAll = s.containsAll(h);
+		System.out.println(containsAll);
+		
+		Object removeAll = h.removeAll(s);
+		System.out.println(removeAll);
+		
+		System.out.println(h);
+		
+		
+		
+		
+	}
+
+}

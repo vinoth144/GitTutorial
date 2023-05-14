@@ -1,0 +1,34 @@
+package com.basicprogram;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CollectionList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	    ArrayList li  = new ArrayList ();
+	    li.add("babu");
+		li.add("don");
+		li.add("nadal");
+		li.add("federer");
+		li.add(2008);
+		li.add(null);
+	 Object object = li.get(0);
+		
+		System.out.println(object);
+		
+		li.add(2, 40);
+		for(int i=0;i<li.size();i++) {
+			System.out.println(li.get(i));
+		}
+		
+		
+		
+		
+		
+	}
+
+}

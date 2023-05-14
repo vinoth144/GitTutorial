@@ -1,0 +1,52 @@
+package com.basicprogram;
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "java";
+		String s1 = "Java";
+		
+		int size = s.length();
+		System.out.println(size);
+		
+		Boolean a = s.isEmpty();
+		System.out.println(a);
+		
+		 char charAt = s.charAt(2);
+		 System.out.println(charAt);
+		 
+		int word = s.indexOf('j');
+		System.out.println(word);
+		
+		int lastIndexOf = s.lastIndexOf("va");
+		System.out.println(lastIndexOf);
+		
+		String name = s.toUpperCase();
+		System.out.println(name);
+		
+		String name1 = s.toLowerCase();
+		System.out.println(name1);
+		
+	 int lastIndexOf2 = s.lastIndexOf('a');
+		System.out.println(lastIndexOf2);
+		
+		boolean startsWith = s.startsWith("j");
+		System.out.println(startsWith);
+		
+		boolean equals = s.equals(s1);
+		System.out.println(equals);
+		
+		//boolean equalsIgnoreCase = s.equalsIgnoreCase(s1);
+		
+		System.out.println(s.equalsIgnoreCase(s1));
+		
+		Boolean l = s.contains("a");
+		System.out.println(l);
+		
+		String w2 = s.replace('j', 'm');
+		System.out.println(w2);
+	}
+
+}

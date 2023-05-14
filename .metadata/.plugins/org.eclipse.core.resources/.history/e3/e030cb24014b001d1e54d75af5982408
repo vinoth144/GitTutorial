@@ -1,0 +1,53 @@
+package seleniumWorkouts;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TakePhoto {
+	
+	public static WebDriver driver;
+	
+	public static void screenShot(String name){
+		
+		try {
+		TakesScreenshot tk = (TakesScreenshot)driver;
+		File screenshotAs = tk.getScreenshotAs(OutputType.FILE);
+		File source = new File("C:\\Users\\dinesh babu\\Downloads\\babushot\\"+name+".jpeg");
+		FileUtils.copyFile(screenshotAs, source);
+		String path = screenshotAs.getPath();
+		System.out.println(path);
+		}
+		catch(Exception e) {
+			
+		}
+	
+	}
+	
+	
+
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\dinesh babu\\greens practice\\Practice\\Driver\\geckodriver.exe");
+
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		//driver.get("https://www.amazon.com");
+		
+		screenShot("log page");
+		driver.findElement(By.id("email")).sendKeys("babu");
+		screenShot("username");
+		
+
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.xinterface;
+
+public class Company implements Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Company Details = new Company();
+
+Details.staff( "lokesh");
+	Details.staff(27);
+	}
+}

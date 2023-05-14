@@ -1,0 +1,45 @@
+package com.basicprogram;
+
+public class JavaOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for (int i=2;i<100;i++) {
+	boolean a = true;
+	for(int j=2;j<i;j++) {
+		if (i%j==0) {
+		a = false;
+		break;
+	}
+	}	if(a==true) {
+		System.out.println(i);
+		
+	}
+
+}
+
+int x = 93;
+for (int i=2;i<x;i++) {
+	boolean a = true;
+	if(x%i==0) {
+		a = false;
+		break;
+	}
+	if(a==true) {
+		System.out.println(x+ "is a prime number");
+	}
+	else {
+		System.out.println(x+ "is not a prime number");
+	}
+}
+
+int a = 0,b=1,c, y=10;
+
+for(int i =2; i<=y;i++) {
+c= a+b;
+a=b;
+b=c;
+System.out.println(i);
+	}
+	}
+}

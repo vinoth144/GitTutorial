@@ -1,0 +1,48 @@
+package com.basicprogram;
+
+import java.util.Scanner;
+
+public class DayTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input =new Scanner(System.in);
+System.out.println("Enter the age");
+int word = input.nextInt();
+if (word>=1&&word <=18) {
+	System.out.println("you are eligble to vote ");
+}
+else {
+	System.out.println("you are  not eligble to vote");
+}
+
+for(int i = 2;i<=100;i++) {
+ if (i%2!=0) {
+		System.out.println(i);
+	}
+}
+
+int x = 28;
+for(int i = 1;i<=x;i++) {
+	 if (x%2!=0) {
+			System.out.println(x+"is a odd number");
+			break;
+	 }
+			else {
+				System.out.println(x+"is a even number");
+				break;
+			}
+
+	}
+
+}
+	}
+	
+
+
+
+
+
+
+
+

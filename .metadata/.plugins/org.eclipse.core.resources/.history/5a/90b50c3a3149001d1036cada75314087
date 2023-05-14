@@ -1,0 +1,23 @@
+package seleniumWorkouts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class addactin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\dinesh babu\\greens practice\\Practice\\Driver\\geckodriver.exe");
+
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.https://adactinhotelapp.com/");
+		driver.findElement(By.id("username")).sendKeys("baburaj123");
+		driver.findElement(By.id("password")).sendKeys("12345678");
+		driver.findElement(By.id("login")).click();
+		
+	}
+
+}
