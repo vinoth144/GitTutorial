@@ -8,7 +8,7 @@ public class GitTutorialDevelope {
 		System.out.println("develope tutorial");
 		System.out.println("develope yourself");
 		
-		
+		System.out.println("now after merge");
 	}
 
 }
