@@ -8,6 +8,11 @@ public class GitEdit {
 		System.out.println("continue doing");
 		System.out.println("your work");
 		
+		System.out.print("dinesh");
+		System.out.println("be like ant");
+		System.out.println("dont afraid of learning new things");
+		System.out.println("overcome your fear");
+		
 		
 	}
 
